@@ -1,0 +1,105 @@
+.banner {
+  background-image: url("/assets/images/hero_pc.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &-title {
+    padding: 230px 0 320px 0;
+  }
+}
+
+.card {
+  @include pad {
+    width: calc(50% - 12px);
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+////store/////
+.store {
+  padding: 120px 0;
+
+  &-title {
+    margin-bottom: 80px;
+  }
+}
+
+///category///
+.category {
+  background-image: url("/assets/images/type_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  position: relative;
+
+  &-card {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    &-content {
+      position: relative;
+      display: inline-block;
+
+      img:hover {
+        filter: brightness(100%);
+      }
+
+      img {
+        filter: brightness(50%);
+
+      }
+    }
+
+    &-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 28px;
+      font-weight: 700;
+    }
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-20%);
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.btn2 {
+  color: #fff;
+  background: #F08929;
+  padding: 12px 24px;
+  border: 1px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+.share-title{
+  margin-bottom: 40px;
+}
+.share-group{
+  padding: 276.5px 0;
+}
