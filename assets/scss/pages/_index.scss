@@ -42,6 +42,11 @@
     flex-wrap: wrap;
     gap: 24px;
 
+    @include pad {
+      align-items: center;
+      justify-content: center;
+    }
+
     &-content {
       position: relative;
       display: inline-block;
@@ -75,6 +80,10 @@
   cursor: pointer;
   padding: 10px;
   z-index: 10;
+
+  @include pad {
+    display: none;
+  }
 }
 
 .left-arrow {
@@ -97,9 +106,15 @@ button:focus {
   border-radius: 4px;
   font-size: 20px;
 }
-.share-title{
-  margin-bottom: 40px;
-}
-.share-group{
-  padding: 276.5px 0;
+
+////ariticle
+.article{
+  padding: 120px 0;
+  &-item{
+   &-text{
+    margin-right: 16px;
+    padding: 0 12px 24px 80px;
+    border-left: 1px solid #BDBDBD;
+   }
+  }
 }
