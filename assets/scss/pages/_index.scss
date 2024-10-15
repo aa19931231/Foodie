@@ -6,6 +6,12 @@
 
   &-title {
     padding: 230px 0 320px 0;
+
+    @include pad {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
@@ -16,6 +22,30 @@
 
   @include mobile {
     width: 100%;
+    margin: 20px 50px;
+  }
+}
+
+.search {
+  position: relative;
+
+  &-bar {
+    border: none;
+    border-radius: 100px;
+    padding: 13px 135px 13px 16px;
+    margin-top: 24px;
+  }
+
+  &-btn {
+    background-color: #F08929;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: absolute;
+    top: 29px;
+    left: 300px;
+
   }
 }
 
@@ -26,6 +56,15 @@
   &-title {
     margin-bottom: 80px;
   }
+}
+
+.card img {
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.card img:hover {
+  transform: scale(1.1);
 }
 
 ///category///
@@ -53,10 +92,12 @@
 
       img:hover {
         filter: brightness(100%);
+        transform: scale(1.1);
       }
 
       img {
         filter: brightness(50%);
+        transition: all 1s;
 
       }
     }
@@ -75,7 +116,7 @@
 
 .arrow {
   position: absolute;
-  top: 50%;
+  top: 44%;
   transform: translateY(-20%);
   cursor: pointer;
   padding: 10px;
@@ -108,13 +149,110 @@ button:focus {
 }
 
 ////ariticle
-.article{
+.article {
   padding: 120px 0;
+
+  &-content {
+    @include pad {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &-item {
+    li {
+      @include pad {
+        align-items: flex-end;
+        justify-content: center;
+      }
+    }
+
+    &-read {
+      color: #F08929;
+
+      @include pad {
+        width: 100%;
+      }
+    }
+
+    &-text {
+      @include pad {
+        border-bottom: 1px solid #BDBDBD;
+        border-left: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      margin-right: 150px;
+      padding: 0 12px 24px 80px;
+      border-left: 1px solid #BDBDBD;
+    }
+  }
+}
+
+////holiday
+.holiday {
+  background-image: url("/assets/images/travel_bg_pc.png");
+  padding: 120px 0;
+
+  &-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    @include pad{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &-content{
+    padding: 40px;
+    position: absolute;
+    border-radius: 4px;
+    right: -100px;
+    bottom: 40px;
+    background: #FFFFFFF2;
+    @include pad{
+      right: 10px;
+      bottom: -180px;
+    }
+
+    h3{
+      color: #333333;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    p{
+      color: #616161;
+    }
+  }
   &-item{
-   &-text{
-    margin-right: 16px;
-    padding: 0 12px 24px 80px;
-    border-left: 1px solid #BDBDBD;
-   }
+    display: flex;
+    position: relative;
+    margin-bottom: 40px;
+    @include pad{
+      margin-bottom: 150px;
+    }
+  }
+}
+
+
+
+
+////about
+.about {
+  background-image: url("/assets/images/aboutus.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 340px 0;
+
+  @include pad {
+    height: 100%;
+    padding: 0;
+  }
+
+  &-text {
+    padding: 0;
   }
 }
