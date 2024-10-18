@@ -36,7 +36,7 @@
     margin-top: 24px;
   }
 
-  &-btn {
+  &-btn2 {
     background-color: #F08929;
     border-radius: 50%;
     width: 40px;
@@ -146,49 +146,29 @@ button:focus {
   border: 1px;
   border-radius: 4px;
   font-size: 20px;
+
+  @include pad {
+    display: none;
+  }
+}
+
+.btn3 {
+  color: #fff;
+  background: #F08929;
+  padding: 12px 24px;
+  border: 1px;
+  border-radius: 4px;
+  font-size: 20px;
+  display: none;
+
+  @include pad {
+    display: block;
+    margin: 0 auto;
+  }
+
 }
 
 ////ariticle
-.article {
-  padding: 120px 0;
-
-  &-content {
-    @include pad {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-  &-item {
-    li {
-      @include pad {
-        align-items: flex-end;
-        justify-content: center;
-      }
-    }
-
-    &-read {
-      color: #F08929;
-
-      @include pad {
-        width: 100%;
-      }
-    }
-
-    &-text {
-      @include pad {
-        border-bottom: 1px solid #BDBDBD;
-        border-left: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      margin-right: 150px;
-      padding: 0 12px 24px 80px;
-      border-left: 1px solid #BDBDBD;
-    }
-  }
-}
 
 ////holiday
 .holiday {
@@ -199,38 +179,44 @@ button:focus {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    @include pad{
+
+    @include pad {
       flex-direction: column;
       align-items: center;
     }
   }
-  &-content{
+
+  &-content {
     padding: 40px;
     position: absolute;
     border-radius: 4px;
     right: -100px;
     bottom: 40px;
     background: #FFFFFFF2;
-    @include pad{
+
+    @include pad {
       right: 10px;
       bottom: -180px;
     }
 
-    h3{
+    h3 {
       color: #333333;
       font-size: 24px;
       font-weight: 700;
       margin-bottom: 8px;
     }
-    p{
+
+    p {
       color: #616161;
     }
   }
-  &-item{
+
+  &-item {
     display: flex;
     position: relative;
     margin-bottom: 40px;
-    @include pad{
+
+    @include pad {
       margin-bottom: 150px;
     }
   }
