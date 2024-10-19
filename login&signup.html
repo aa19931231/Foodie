@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <title>index</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吃貨發現-註冊&登入</title>
   <script type="module" crossorigin src="/Foodie/assets/main-b40a8516.js"></script>
   <link rel="stylesheet" href="/Foodie/assets/main-db538be4.css">
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container container-fluid">
         <a class="navbar-brand" href="index.html"><img src="data:image/png;base64,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" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -48,215 +43,47 @@
             </div>
         </div>
     </div>
-</nav>    <div class="banner">
-      <div class="container">
-        <div class="banner-title">
-          <h1>現在想找好吃的！</h1>
-          <p class="fs-5 text-secondary">I Want Something Delicious Now！ </p>
-          <div class="d-flex gap-4 mt-4">
-            <div class="dropdown">
-              <button class="btn bg-white rounded-pill" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <span class="material-symbols-outlined align-top me-2">
-                  location_on
-                </span>
-                不限地區
-                <span class="material-symbols-outlined align-bottom ms-2">
-                  keyboard_arrow_down
-                </span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">北部</a></li>
-                <li><a class="dropdown-item" href="#">中部</a></li>
-                <li><a class="dropdown-item" href="#">南部</a></li>
-                <li><a class="dropdown-item" href="#">東部</a></li>
-              </ul>
+</nav>    <div class="bgimage">
+        <div class="container p-5">
+            <div class="row justify-content-evenly">
+                <div class="col col-xs-6">
+                    <h2 class="text-center">註冊帳戶</h2>
+                    <form class="signupFormBox d-flex flex-column mx-auto row">
+                        <div class="mb-5 col-auto">
+                            <label for="username" class="form-label">使用者名稱</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="email" class="form-label">電子郵件</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="password" class="form-label">密碼</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="confirmPassword" class="form-label">確認密碼</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <button type="submit" class="btn text-white btn-warning mb-5 fs-5">註冊</button>
+                    </form>
+                </div>
+                <div class="col col-xs-6">
+                    <h2 class="text-center">登入</h2>
+                    <form class="signupFormBox d-flex flex-column mx-auto">
+                        <div class="mb-5">
+                            <label for="email" class="form-label">電子郵件</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="password" class="form-label">密碼</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn text-white btn-warning mb-5 fs-5">登入</button>
+                    </form>
+                </div>
             </div>
-            <div class="dropdown">
-              <button class="btn bg-white rounded-pill" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <span class="material-symbols-outlined align-top me-2">
-                  skillet
-                </span>
-                所有美食
-                <span class="material-symbols-outlined align-bottom ms-2">
-                  keyboard_arrow_down
-                </span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">中式</a></li>
-                <li><a class="dropdown-item" href="#">日式</a></li>
-                <li><a class="dropdown-item" href="#">韓式</a></li>
-                <li><a class="dropdown-item" href="#">西式</a></li>
-                <li><a class="dropdown-item" href="#">美式</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="search">
-            <input class="search-bar" type="text" name="search" id="search" placeholder="輸入你想要搜尋的食物！">
-            <button class="search-btn3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADoSURBVHgB7ZPdDcIwDIQdJugI2QA2gBHKBIQNOgKbkBFggo5QNqBMQDcIZ+qHghTygxB9yEmfotauL2lsoqJ/S/kCzrkKiwFLoMEAzkopS98aoLjG0oIbsKAHbFiDNdjC6EI54uLgCownXktcU47woQWHQE4DWso0cKHd8f2Au9xTUvEV6CJzO7AJ5S3enrlTYnc1UKpSjh6b93ICtN6z10FDn4tz/CT5aZq0aeOJ17J7HVEuOGg8THyinsZp3snK7wecYE85BhMjQ+P0VmLChS3/Gp4XTokxyZYM5ZF+qWKSamKoaHZ6ACHFtBmbS5L5AAAAAElFTkSuQmCC"
-                alt=""></button>
-          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="store">
-      <div class="container">
-        <h2 class="store-title text-center fs-1 fw-bold">這些店很熱門</h2>
-        <div class="store-card-group d-flex justify-content-between flex-wrap">
-          <div class="card border-0">
-            <img src="/Foodie/assets/popular_store_1-65ca4872.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bold fs-5 p-1">貳樓 Secondfloor</h5>
-              <p class="card-text p-1">貳樓開幕以來座著名的就是全天候早午餐，即使假日睡到下午，仍然可以享受到豐富的早午餐選擇，無論是經典的或創新的料理都令人滿足。</p>
-              <div class="tag d-flex">
-                <p class="text-white">西式早午餐</p>
-                <p class="text-white">人氣聚集地</p>
-              </div>
-            </div>
-          </div>
-          <div class="card border-0">
-            <img src="/Foodie/assets/popular_store_2-24b6c622.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bold fs-5 p-1">瓦城</h5>
-              <p class="card-text p-1">洋溢熱帶風情的泰式料理，是最搭冬天的美食！使用香料如香茅、青柠檬、辣椒，突顯獨特風味。</p>
-              <div class="tag d-flex mt-4">
-                <p class="text-white">泰式美饌</p>
-                <p class="text-white">人氣聚集地</p>
-              </div>
-            </div>
-          </div>
-          <div class="card border-0">
-            <img src="/Foodie/assets/popular_store_3-e56d9bf8.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bold fs-5 p-1">響時天堂</h5>
-              <p class="card-text p-1">菜色豐富、爐烤現切牛排、焗烤生蠔、現煎天使紅蝦、牛小排，晚餐免費可享用最新限定的北海道</p>
-              <div class="tag d-flex mt-4">
-                <p class="text-white">人氣Buffet</p>
-                <p class="text-white">人氣聚集地</p>
-              </div>
-            </div>
-          </div>
-          <div class="card border-0">
-            <img src="/Foodie/assets/popular_store_4-fcf22484.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bold fs-5 p-1">新富町</h5>
-              <p class="card-text p-1">古色古香的日式老宅，結合文青單車品牌，提供美味甜點和咖啡。招牌是使用日本直送的鮮奶製作的</p>
-              <div class="tag d-flex mt-4">
-                <p class="text-white">日式涮涮鍋</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="category">
-      <button class="btn btn-link arrow left-arrow">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASZSURBVHgB5Zs9T9tQFIZPkgohprCEwEJg6oTSrVtTCYZO7QxIhF8AAcQK/AEKvwAiAVI3JiakphPqBBU7uAufQzNlQUDf17WtGJzv65vr9JGc6yQ3jt/jc+6H73FMQub6+jqDIvf8/JyNx+OjsViM75PYMi+qWtjKqGdh+/X09HSG+mfDw8OWhEhMQgCiKfhLIpH4LK+FtoqFrQSDFGGMkihGmQEuLy+TAwMDC7jCixCflHCwYIgNlCVVntGxATQJ94H/KqPYfXx83O7UEB0Z4ObmZhFxuqZLeAC2R8AIu9ImbRmADRuuwg62nJgBDfGxHW+IS4vwqqNxOzVIPMnAE0+vrq4WpUVa8oC7u7uvcPeW/0Qz60NDQxvNVm7aABC/A/F5iQDwzt1UKjXfVN1mKt3e3p6iyEq0OIMnvGtUqWEbwCsv0RNPss6516WuAe7v79ei4vZB8NzZbtWrUzME2Nojlur+OCpgwFQYGRnZCvou0ADs59nVdXGAo5oyxgnvgsYJgSGAPvV7D4knSQ7cgr54ZQBc/bx0PoMzDg7cggZKvhCg6/PqSw8awKFcqVTGQNn9wOcBiPsF6V3xJNnf3+/zAs8DutHw7e/v2+XMzIxoxOcF1R6Q0y3e3S4uLkQjPi/wDMB5vWjCFU4KhYKMj4+LTqB1wdvnC+/hiabYfyl+ampKukDS0ex5QF40YIh4G3SLX1jaBoBLfJCQMUk8gQE+26XT919KiJgm3gXD4zFoj4c61TVVvEMuDiuEZgDDxTMMsnG+SAiYLt6B4R8fFcVERDw9YJQhMCgKiYp4hyRDQJkHREw8ycRwx/dZFFAtXgdHR0eigpZXhmqBiZREkTeiiNnZWbs8ODiwy6WlJZmcnBTTSaysrMyjHVAyDZ6YmLA94fz8XE5OTgQLE9pnei1iJVZXV+ewkxZFRMwIVmJ5efkTPOCtKCQqRsA5/mQIvIcB3otiomAEnN83ekDanRurxnQjQPc2u8GShAh7h+npaXt/c3NTjo+PxRSYimffFcY6oKVyRBjE3t6eaV2kBY8ccwdChxIypnkCLniJpW0AxGnoBiAmGQErxkWW3sII1tH/6FoXMCAcbPfnjjcXgPht0cRLT9C8MCJOtqmNNxfo6+vbenh4WNDlBe7cgWjuGrkkVnLf+FaHMTVeR6Fthagb0NPT6fTrpTFCL3DycHsVpuL7UmV8BhgcHCxXx0ev4eQVW9WfBeYIoUdgikxOeguv5a8m8I4Q+sj5XgoFamEyddB3gQagm/RSKAS5vkvNe4JoKdkgahsbhAXFU0ut7xvmCqNr3EUxJ9GkiLjP16vQVLI0GkXmDv2fydIklUrxQEWJDsVmxJOm1wUcVzK+YeRIr5HbV9PSwggOvI4/KJjYRfKceG7Vw9ymfidtYFpGKYT/YGp8Ow9NdfTYHPOKnfS6jHQBZ4BTt5treAzpECfDlG43p/PBScZ6pVLZqs77betYogj3IekwPUKlcO+YEgJMQoQh8thl+l1GOgCCf6M45H1Lox+eroXTYGaZjMV8JD4+z1B5eRueQp0rbMm/efuZKHxIuhZ/ASpMcJXkOEbDAAAAAElFTkSuQmCC" alt="">
-      </button>
-      <div class="container">
-        <h2 class="category-title text-center fs-1 fw-bold">今天想吃什麼?</h2>
-        <div class="category-card">
-          <div class="category-card-content">
-            <img src="/Foodie/assets/type_1-44773b5e.png" alt="">
-            <span class="category-card-text">輕食早午餐</span>
-          </div>
-          <div class="category-card-content">
-            <img src="/Foodie/assets/type_2-0fad5c71.png" alt="">
-            <span class="category-card-text">人氣 Buffet</span>
-          </div>
-          <div class="category-card-content">
-            <img src="/Foodie/assets/type_3-4e20bba7.png" alt="">
-            <span class="category-card-text">元氣健身餐</span>
-          </div>
-          <div class="category-card-content">
-            <img src="/Foodie/assets/type_4-42a23bd6.png" alt="">
-            <span class="category-card-text">氣氛餐酒館</span>
-          </div>
-          <div class="category-card-content">
-            <img src="/Foodie/assets/type_5-c58bb531.png" alt="">
-            <span class="category-card-text">五星級饗宴</span>
-          </div>
-          <div class="category-card-content">
-            <img src="/Foodie/assets/type_6-9986f143.png" alt="">
-            <span class="category-card-text">夯景點美食</span>
-          </div>
-          <div class="category-card-content">
-            <img src="/Foodie/assets/type_7-532d4c61.png" alt="">
-            <span class="category-card-text">美味宵夜</span>
-          </div>
-          <div class="category-card-content">
-            <img src="/Foodie/assets/type_8-c120d890.png" alt="">
-            <span class="category-card-text">日式</span>
-          </div>
-        </div>
-        <div class="pagination-indicator">
-          <div class="dots-container">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-          </div>
-          <button class="btn4">瞭解更多</button>
-        </div>
-      </div>
-      <button class="btn btn-link arrow right-arrow">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASYSURBVHgB5Zu7TuNQEIYnCUKIKjTcGgI0W6HwBJstaGigRIBEeAKIEKy2Al6AyxNAJOjpQdpsR0dW1BDTcC2SKkJCwP6/cawYnLt9fJL9JHNMfOJ45szMuY1D4jN3d3cxFIn39/d4OBweCYVC/D+KI/apqoGjgHoGjr9vb29Z1M8ODQ0Z4iMh8QEITYFnI5HIjHwVtFEMHBkoJA1lZMRjPFNALpeL9vb2rqCFVyF8VPzBgCK2UWa8soyWFaBIcAf4rQKKw9fX1/1WFdGSAu7v71fhp5uqBHfBtAgo4VCapCkFMLChFQ5wJEQPqIgfzVhDWBqErY7gdqGR8CQGS7y4vb1dlQZpyAIeHx93Ye4N/4hitgYGBrbrrVy3AiD8AYRPShsA6zzs7+9frqtuPZUeHh4uUMSlvcjCEiZrVaoZA9jy0n7Ck7j17FWpqoCnp6fNdjF7N/jsjFvV6lR0AUZ7+FLVL7cLGDClhoeH99yuuSqA/Ty7ugAHOF5TwDhh0m2c4OoC6FN/d5DwJMqBm9uFLwpA6yel9RmcdnDg5jZQcrgATZ+tLx2oAItCsVgcBYXSBw4LgN+vSOcKT6I9PT0OK7AtIIjAd3x8bJYLCwuiEIcVdJVdSKgU/vr62lYAUaiEkhVs8R/bBTivF4WMjY1JKpUyz6mIcmX4DWRdsc/5h2t4EoDvT01NBaWEqCWzbQFJCYiglIBucZalqQCYxHcJkCCUAAXMmKXV9+dEA05PT2V392P6waDod2DE8Hg0srGxkcD5nGjA+Pi4YCFDzs/P5fLy0vxsYmJC/IIbMJG1tbU5ndb3FCvhJrK+vs5p7zfRCIVKeKAL/MTJoGiGCiWg4Z/pAr9wouXUV4ESnukCWq/6+KyEaJd4xPT0tKjA6wlUwztDOoDuS7wihDV/7+7mE2dnZ7Kzs2Oez8/Py+LionhFGNq8EY3xU3hgYBQczoum+Cw8KYQxHtbSAhQIz1hywyBoiGaoEJ5AAVnGgKxohCrhCbPQaAEZ0QSVwhOm4pmrwtgHNDAcHpEAUS08MLB9PloaCJ1IgAQgPCdCGZamAhAHAlNAEMIT7BinWdobI9hHz6veEA1KeLHMnyf2XADC74tCrq6ughJerGxTE9sC8vl89OXlJafSCo6OjsxSpfDyKVfAsTuMidEWCqU7RKqhpQ8ODtobpI7pcHd3956Vh9upMBXfkSrjUEBfX1+h3D86DSuv2Cj/zDVHCD0CU2QS0lnYkb8c1xUh9JHLneQKlIXJ1G7XXBVAM+kkV3Az/RIV1wQRKRkQlY4N/IDCU5ZK12vmCqNrPESxJO1JGn6frFahrmRpBEXmDv2fydIEGxO8UVrah3Q9wpO69wUsU9I+MHKkV8vsy2loYwQ33sIPpHTsIvlMfLbyYW5d35Mm0C2jFIL/YWp8My9NtfTaHPOKrfS6mASANcCp2s3VvIe0iJVhSrNbUvniJH29WCzulef9NnUv8YjSS9J+WoSXgtv3FB9gEiIUkcQp0+9i0gLW3uUJ1y21fnm6ElbAjMNX42hBHjG6yudleApqtbAhH/N2bth49pJ0Jf4BPeV2RohIVNEAAAAASUVORK5CYII=" alt="">
-      </button>
-    </section>
-    <div class="sharing">
-      <div class="container">
-        <div class="sharing-content">
-          <div class="sharing-title">
-            <h2 class="fs-1 fw-bold mb-4">主題分享</h2>
-            <button class="btn2"><a href="topicShare.html">更多文章</a></button>
-          </div>
-          <div>
-            <div class="d-flex justify-content-between">
-              <h4>2024 高雄美食 30 家推薦必吃</h4>
-              <a href="#">繼續閱讀</a>
-            </div>
-            <p>30 家推薦必吃：傳奇烤鴨、米其林蒸蛋湯、燒烤吃到飽、北港蔡三代筒仔米糕</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="holiday">
-      <div class="container">
-        <div class="holiday-container">
-          <div class="holiday-title">
-            <h2 class="fs-1 fw-bold mb-4">假日怎麼玩？</h2>
-            <button class="btn2">瞭解更多</button>
-          </div>
-          <div>
-            <div class="holiday-item">
-              <img src="/Foodie/assets/travel_1-71314e04.png" alt="">
-              <div class="holiday-content">
-                <h3>花蓮景點必去清單</h3>
-                <p>花蓮景點除了花蓮太魯閣和花蓮七星潭，還有哪裡</br>好玩？整理 15 個花蓮景點推薦給你</p>
-              </div>
-            </div>
-            <div class="holiday-item">
-              <img src="/Foodie/assets/travel_2-6a67adbd.png" alt="">
-              <div class="holiday-content">
-                <h3>端午節連假旅遊攻略</h3>
-                <p>6/8(六) 至 6/10(一) 共 3 天連假，不想浪費今年最後</br>一個連假嗎？快參考本篇推薦端午連假旅遊攻略</p>
-              </div>
-            </div>
-          </div>
-          <button class="btn3">更多文章</button>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="about">
-      <div class="container">
-        <div class="about-text">
-          <h2 class="text-white fs-1 fw-bold text-center mb-4">關於我們</h2>
-          <p class="text-white text-center fs-3">假日去探店、吃美食或是到處走走，但常常不知要去哪。</p>
-          <p class="text-white text-center fs-3">為了讓不知假日能去哪的吃貨們可以從中獲得靈感，</p>
-          <p class="text-white text-center fs-3">吃貨發現誕生了。</p>
-        </div>
-      </div>
     </div>
     <footer class="footer">
     <div class="container">
@@ -284,8 +111,6 @@
             </div>
         </div>
     </div>
-</footer>
-      
+</footer>    
 </body>
-
 </html>
